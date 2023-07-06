@@ -6,11 +6,43 @@
     <link rel="stylesheet" href="normalize.css">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
     <title>Sign-up form</title>
 </head>
 <body>
-    This is a placeholder.
+    <header>
+        <div id="logo">
+            <img src="./img/logo-icon.png" alt="The image of a vector of a flower's carpel" height="100px" width="auto">
+            <h1>Placeholder</h1>
+        </div>
+        <p id="credits">Image by <a href="https://freesvg.org/by/OpenClipart">OpenClipart</a> on <a href="https://freesvg.org/">FreeSVG</a></p>
+    </header>
+    <main>
+        <section>
+            <h2>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started. <br><br> You <i>know</i> you want to.</h2>
+            <div id="form-container">
+                <form>
+                    <fieldset>
+                        <h2>Let's do this!</h2>
+                        <div class="form-inputs">
+                            <div class="column-1">
+                                <label for="first-name">First Name <input type="text" id="first-name" required> </label>
+                                <label for="last-name">Last Name <input type="text" id="last-name" required> </label>
+                                <label for="email">Email <input type="email" id="email" required> </label>
+                            </div>
+                            <div class="column-2">
+                                <label for="phone">Phone Number <input type="tel" id="phone" required> </label>
+                                <label for="password">Password <input type="password" id="password" required> </label>
+                                <label for="confirm-password">Confirm Password <input type="password" id="confirm-password" required> </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <button>Create account</button>
+                </form>
+                <p>Already have an account? <a href="./index.html">Log in</a></p>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
