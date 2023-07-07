@@ -3,7 +3,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Inter', sans-serif;
     height: 100%;
     display: flex;
 }
@@ -42,12 +42,17 @@ header {
 
 #credits {
     font-size: smaller;
+    font-weight: 500;
     align-self: center;
     color: white;
 }
 
 #credits a {
     color: white;
+}
+
+#credits a:hover {
+    color: #e4e4e4
 }
 
 main {
@@ -68,12 +73,28 @@ section {
     display: flex;
     flex-direction: column;
     align-self: center;
+    justify-content: center;
+    height: 100%;
+    row-gap: 50px;
     
 }
 
-.form-container {
-    display: flex;
-    align-self: center;
+#form-container p {
+    font-weight: 500;
+}
+
+#form-container p a {
+    text-decoration: none;
+    font-weight: bold;
+    color:#825773
+}
+
+#form-container p a:active {
+    color:#644459
+}
+
+#form-container p a:hover {
+    color:#a16d8e
 }
 
 fieldset {
@@ -83,11 +104,14 @@ fieldset {
     background-color: white;
     display: flex;
     flex-direction: column;
-    padding-left: 20px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.100)
 }
 
 fieldset h2 {
-    padding-left: 0px;
+    margin: 0;
+    padding: 0px 0px 20px 0px;
 }
 
 .form-inputs {
@@ -98,4 +122,60 @@ fieldset h2 {
 label {
     display: flex;
     flex-direction: column;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: small;
+    color: #353237;
+}
+
+label input {
+    margin-top: 2px;
+    margin-bottom: 12px;
+    padding: 8px;
+    font-size: medium;
+    background-color: #fcfcfc;
+    border: 1px;
+    border-style: solid;
+    border-color: #e4e4e4;
+    border-radius: 6px;
+}
+
+label input:not(:placeholder-shown):invalid {
+    background-color: #ffcdcd;
+    border-color: #c23e3e;
+}
+
+
+label input:not(:placeholder-shown):invalid:focus-visible {
+    border-color: #4473a7;
+}
+
+label input:focus,
+label input:focus-visible {
+    outline:1px solid #4473a7;
+    border-color:#4473a7;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.100);
+}
+
+button {
+    font-size: larger;
+    font-weight: 600;
+    color: white;
+    padding: 16px 40px 16px 40px;
+    border-radius: 8px;
+    border: 0;
+    background-color: #825773;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.205);
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0px 12px 10px rgba(0, 0, 0, 0.100);
+    background-color: #a16d8e;
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.400);
+    background-color: #644459;
 }
